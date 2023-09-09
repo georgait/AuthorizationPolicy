@@ -59,6 +59,34 @@ Here are the instructions to integrate RabbitMQ using Docker:
 
 And that's it! Your application should now be able to connect to RabbitMQ running in a Docker container on your machine.
 
+## Setting up the Database using Entity Framework Core
+
+Here are the Entity Framework Core commands that you can use to set up the database for this project:
+
+1. **Install the EF Core tools**: If you haven't already, you'll need to install the Entity Framework Core tools by running the following command in your terminal:
+   ```
+   dotnet tool install --global dotnet-ef
+   ```
+
+2. **Create the database**: Navigate to the project directory where your `DbContext` is located and run the following command to create the database:
+   ```
+   dotnet ef database update
+   ```
+   This command creates the database and applies any pending migrations.
+
+3. **Add a migration**: If you make changes to your model and need to update the database schema, you can create a new migration by running the following command:
+   ```
+   dotnet ef migrations add [MigrationName]
+   ```
+   Replace `[MigrationName]` with a descriptive name for your migration.
+
+4. **Update the database**: After adding a new migration, you can update the database schema by running the following command:
+   ```
+   dotnet ef database update
+   ```
+
+These are the basic commands that you'll need to set up and manage the database for this project using Entity Framework Core. You can find more information about using EF Core in the [official documentation](https://docs.microsoft.com/en-us/ef/core/).
+
 ## Disclaimer
 
 Please note that this project is not meant for production use. Use it to experiment and have fun, but use it at your own risk when it comes to production environments.
