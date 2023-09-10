@@ -1,4 +1,4 @@
-# AuthorizationPolicy
+# Authorization Policy
 
 This project is a proof of concept that demonstrates the integration of a policy (library) server, a payment gateway, and a secured API using RabbitMQ for asynchronous communication.
 
@@ -12,7 +12,7 @@ At the core of our project is the policy server, based on the [PolicyServer.Loca
 
 ### Payment Gateway
 
-The PaymentGateway API simulates a paid service. It features two main endpoints:
+The PaymentGateway API simulates a payments service. It features two main endpoints:
 
 1. **Virtual Payment Endpoint**: This endpoint simulates the process of making a payment.
 2. **Payment Information Endpoint**: This endpoint retrieves information about a specific payment by its ID.
