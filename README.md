@@ -39,7 +39,7 @@ Here are the instructions to integrate RabbitMQ using Docker:
 
 3. **Run the RabbitMQ container**: Run the following command to start a new RabbitMQ container:
    ```
-   docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+   docker run -d --hostname payments --name rabbit-server -p 5672:5672 -p 15672:15672 rabbitmq:3-management
    ```
    This command does the following:
    - `-d` runs the container in detached mode (in the background).
