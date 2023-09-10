@@ -20,10 +20,4 @@ public class Policy
 
         return Task.FromResult(result);
     }
-
-    internal Task CreatePolicyAsync(ClaimsPrincipal user, Role role, Policy policy)
-    {
-        // TODO: Implement
-        return Task.CompletedTask;
-    }
 }
